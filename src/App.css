@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(/0.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.fondo {
+  display: flex; /* o display: grid; según tus preferencias */
+  justify-content: space-around;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}
+
+.izquierda {
+  position: fixed;
+  top: 25%;
+  left: 0;
+  width: 25%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.izquierda__misioneros {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 50%;
+}
+.cajita {
+  width: 33%;
+  height: 70%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+.derecha {
+  position: fixed;
+  top: 25%;
+  right: 0;
+  width: 25%;
+  height: 40%;
+}
+
+/* Centro */
+.centro {
+  position: fixed;
+  top: 50%;
+  right: translateX(-50%);
+  width: 50%;
+  height: 20%;
+}
+.centro__main {
+  width: 15rem;
+  height: 10rem;
+  position: fixed;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  transition: left 5s cubic-bezier(0, 0, 1, 1);
+}
+.centro__main__seat {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centro__main__seat__izq {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centro__main__seat__der {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boat {
+  width: 40%;
+  cursor: pointer;
+  position: relative;
+  width: 177px;
+  height: 160px;
+  left: 0;
+  transition: left 5s cubic-bezier(0, 0, 1, 1);
+}
+.initial__boat {
+  position: relative;
+  transition: left 5s cubic-bezier(0, 0, 1, 1);
+}
+.end__boat {
+  transition: left 5s cubic-bezier(0, 0, 1, 1);
+}
+
+.player {
+  width: 100%;
+}
+.train {
+  width: 100%;
+}
